@@ -1,13 +1,13 @@
-# Node Pokemon Go Scanner for Twitter
+# Node-Based Pokemon Go Scanner for Twitter
 
-Created by Chris Simmons (endigodesign.com)
+Created by Chris Simmons ([endigodesign.com](endigodesign.com))
 
 ## Requirements
 
 * Node.js
 * NPM
-* A Twitter account
-* A Pushbullet account
+* A [Twitter](http://www.twitter.com) account
+* A [Pushbullet](https://www.pushbullet.com/) account
 
 ## Setup & Instructions
 
@@ -29,4 +29,4 @@ The app allows you to enter a list of Twitter Stream IDs (unique identifiers per
 
 ## Help & Support
 
-Contact me at chris@endigodesign.com
+Contact me at [chris@endigodesign.com](mailto:chris@endigodesign.com)

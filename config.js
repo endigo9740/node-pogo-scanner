@@ -1,4 +1,4 @@
-// Define Credentials
+// Configure
 const config = {
 
     // Provide a comma seperated list of stream_ids
