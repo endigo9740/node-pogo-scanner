@@ -1,0 +1,19 @@
+{
+    "name": "pogo-scanner",
+    "version": "1.0.0",
+    "description": "A Node-based Twitter scanner for Pokemon Go",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/endigo9740/node-pogo-scanner"
+    },
+    "author": "Chris Simmons (endigodesign.com)",
+    "license": "ISC",
+    "dependencies": {
+        "pushbullet": "^2.0.0",
+        "twitter": "^1.7.0"
+    }
+}
