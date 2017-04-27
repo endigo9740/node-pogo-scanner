@@ -15,7 +15,11 @@ Created by Chris Simmons (endigodesign.com)
 * Rename "creds-sample.js" to "creds.js", follow the instructions in the file, and fill in all credentials.
 * View config.js to configure Twitter Stream IDs and Pokemon to search for.
 * Use `npm start` to start the scanner.
-* Press `Control + C` (on Mac) to exit the scanner.
+* Press `Control + C` to exit the scanner.
+
+## What It Does
+
+Notifies you when a desired Pokemon has been mentioned in a tweet from a select list of Twitter users.
 
 ## How It Works
 
