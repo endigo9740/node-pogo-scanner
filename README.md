@@ -6,6 +6,8 @@ Created by Chris Simmons (endigodesign.com)
 
 * Node.js
 * NPM
+* A Twitter account
+* A Pushbullet account
 
 ## Setup & Instructions
 
