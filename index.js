@@ -1,6 +1,7 @@
 const Twitter = require('twitter');
 const PushBullet = require('pushbullet');
 const Creds = require('./creds.js');
+const Config = require('./config.js');
 
 // Set Credentials from creds.js
 let tw = new Twitter({
@@ -11,29 +12,10 @@ let tw = new Twitter({
 });
 let pb = new PushBullet(Creds.pushbulletAccessToken);
 
-// Configure Settings
+// Configure Settings from config.js
 let config = {
-
-    // http://gettwitterid.com/?user_name=endigodesign&submit=GET+USER+ID
-    // DallasPoGo, PoGoWhiteRock, Pogo Alerts Northpark, Pogo Alerts Preson Hollow
-    stream_ids: '776568166562476032, 777626186591637509, 839559590182326278, 840322504430350336, 68259245',
-
-    // See keywords-list.md for examples
-    // (note: NOT case insensitive)
-    keywords: [
-        "Porygon",
-        "Dragonair", "Dragonite",
-        'Larvitar', 'Pupitar', 'Tyranitar',
-        'Mareep', 'Flaaffy', 'Ampharos',
-        'Snubbull', 'Granbull',
-        'Swinub', 'Piloswine',
-        'Houndour', 'Houndoom',
-        'Tyrogue', 'Hitmontop',
-        'Unown',
-        "Delibird",
-        "Smeargle"
-    ]
-
+    stream_ids: Config.stream_ids,
+    keywords: Config.keywords
 };
 
 // Filter tweets by stream_ids

@@ -2,9 +2,25 @@
 
 Created by Chris Simmons (endigodesign.com)
 
-## Instructions
+## Requirements
 
-* Clone the repo to a local computer with Node.js and NPM setup
-* Use command `npm install` to install required NPM dependencies
-* Use commands `npm start` or `node index.js` to start the scanner
-* Press `Control + C` (on Mac) to exit the scanner
+* Node.js
+* NPM
+
+## Setup & Instructions
+
+* Clone the repo and ensure you have both Node.js and NPM setup.
+* `cd` into the project directory.
+* Use `npm install` to install required NPM dependencies.
+* Rename "creds-sample.js" to "creds.js", follow the instructions in the file, and fill in all credentials.
+* View config.js to configure Twitter Stream IDs and Pokemon to search for.
+* Use `npm start` to start the scanner.
+* Press `Control + C` (on Mac) to exit the scanner.
+
+## How It Works
+
+The app allows you to enter a list of Twitter Stream IDs (unique identifiers per each Twitter user), as well as a list of Pokemon you wish to be notified of. It opens a streamed connection to the Twitter API and watches for tweets from each provided Twitter user. If their tweet contains one of the Pokemon keywords entered, you'll receive a push notification from Pushbullet on all of your connected devices.
+
+## Help & Support
+
+Contact me at chris@endigodesign.com
