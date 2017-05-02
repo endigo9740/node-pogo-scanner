@@ -5,7 +5,7 @@ const Config = require('./config.js');
 
 var currentDateTime = new Date();
 var startHour = 9; // 9 am
-var endHouse = 24; // 12 midnight
+var endHour = 23;  // ~1 am (24:59)
 
 // Set Credentials from creds.js
 let tw = new Twitter({
@@ -33,7 +33,7 @@ tw.stream('statuses/filter', { follow: config.stream_ids }, function (stream) {
     stream.on('data', function (tweet) {
 
         // If within allowed timeframe
-        if( currentDateTime.getHours() >= startHour && currentDateTime.getHours() <= endHouse ){
+        if( currentDateTime.getHours() >= startHour && currentDateTime.getHours() <= endHour ){
 
             // Loop through keywords
             for (var i = 0; i < config.keywords.length; i++) {
